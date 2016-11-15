@@ -39,7 +39,7 @@ function calibrate() {
     button.disabled = true;
     dx = 0;
     var oldOrientation = Quaternion.clone(app.context.getEntityPose(app.device.displayEntity).orientation);
-    console.log(app.context.getEntityPose(app.device.displayEntity);
+    console.log(app.context.getEntityPose(app.device.displayEntity));
     console.log(oldOrientation);
     flow.startCapture();
     window.setTimeout(endCalibration, 5000, oldOrientation);
